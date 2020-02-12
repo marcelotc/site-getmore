@@ -269,3 +269,99 @@ header#main-header div.side button {
     line-height: 14px;
     color: #FFFFFF;
 }
+
+.sectionThree {
+    position: absolute;
+    left: 128px;
+    top: 1661px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    color: #4F4F4F;
+}
+
+.sectionThree-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sectionThree>h1 {
+    margin-bottom: 100px;
+}
+
+.sectionThree-container>ul {
+    list-style: none;
+}
+
+.sectionThreeOptions>h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 22px;
+    color: #4F4F4F;
+    margin-left: 22px;
+}
+
+.sectionThreeOptions>h2.active {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 22px;
+    color: #222222;
+    margin-left: 0;
+}
+
+.sectionThree-container .circle {
+    width: 32px;
+    height: 32px;
+    left: 142px;
+    top: 2050px;
+    background: #FF6B7D;
+    color: #fff;
+    border-radius: 50%;
+    margin: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.sectionThree-container .circle.active {
+    width: 60px;
+    height: 60px;
+    left: 128px;
+    top: 1820px;
+    background: #EF1247;
+    margin-left: -10px;
+}
+
+.sectionThree-container>ul>li>p.active {
+    margin-bottom: 60px;
+}
+
+.sectionThreeOptions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sectionThree-container>ul>li>p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #222222;
+    margin-left: 80px;
+}
+
+.sectionThreeOptionsImage {
+    margin-left: 100px;
+}
