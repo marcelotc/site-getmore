@@ -4,9 +4,3 @@ function mudaFoto(foto) {
 	$('.active').removeClass('active');
 	$(this).addClass('active');
 }
-
-$(function () {
-	$('.teste').click(function () {
-		alert('teste')
-	});
-});
