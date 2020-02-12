@@ -33,7 +33,7 @@ input, button {
 
 header#main-header {
     height: 46px;
-    margin-top: -366px;
+    margin-top: -265px;
 }
 
 header#main-header .content {
@@ -109,7 +109,7 @@ header#main-header div.side button {
     display: flex;
     flex-direction: row;
     flex-direction: row-reverse;
-    margin: -28px -51px 0 0;
+    margin-top: -46px;
 }
 
 .sectionOne {
@@ -174,6 +174,98 @@ header#main-header div.side button {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-top: 30px;;
+    margin-top: 30px;
+}
 
+.sectionTwo {
+    margin-top: 65px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.sectionTwo>img {
+    width: 1400px;
+    height: 1000px;
+}
+
+.sectionTwo-phraseOne {
+    position: absolute;
+    left: 6%;
+    top: 15%;
+    color: white;
+    font-weight: bold;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: justify;
+}
+
+.sectionTwo-phraseTwo {
+    position: absolute;
+    left: 6%;
+    top: 33%;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 39px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+.sectionTwo-phraseThree {
+    position: absolute;
+    left: 6%;
+    top: 37%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-align: justify;
+}
+
+.sectionTwo-statistics>ul {
+    position: absolute;
+    left: 6%;
+    top: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style: none;
+    text-align: justify;
+}
+
+.sectionTwo-statistics>ul>li>h1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.sectionTwo-statistics>ul .statistic-middle {
+    margin: 0 50px 0 50px;
+}
+
+.statistic-graph>img {
+    position: absolute;
+    margin: -863px 0 0 -143px;
+}
+
+.statistics-data {
+    position: absolute;
+    left: 70%;
+    top: 84%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
 }
