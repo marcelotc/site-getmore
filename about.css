@@ -67,7 +67,6 @@ header#main-header div.side {
 
 header#main-header div.side img {
     height: 34px;
-    width: 34px;
     border-radius: 50%;
     margin: 0 15px;
 }
@@ -100,6 +99,16 @@ header#main-header div.side>button:hover {
     box-shadow: 0px 4px 10px rgba(255, 107, 125, 0.7);
 }
 
+.about-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.about-link:hover {
+    font-weight: bold;
+}
+
 .sectionOne {
     margin: 170px 0 0 0;
 }
@@ -116,7 +125,6 @@ header#main-header div.side>button:hover {
 
 .sectioOne-content>h1 {
     position: absolute;
-    width: 502px;
     height: 137px;
     left: 128px;
     top: 257px;
@@ -130,7 +138,6 @@ header#main-header div.side>button:hover {
 
 .sectioOne-content>p {
     position: absolute;
-    width: 482px;
     height: 104px;
     left: 128px;
     top: 454px;
@@ -164,7 +171,6 @@ video#videoGet {
 
 .sectionTwo>h1 {
     position: absolute;
-    width: 354px;
     height: 45px;
     left: 128px;
     top: 818px;
@@ -235,8 +241,65 @@ video#videoGet {
     margin-top: 439px;
 }
 
+.sectionThree {
+    display: flex;
+    flex-direction: row;
+}
+
+.sectionThree-content-left>h1 {
+    position: absolute;
+    height: 44px;
+    left: 128px;
+    top: 1625px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+    color: #000000;
+}
+
+.sectionThree-content-left>p {
+    position: absolute;
+    height: 376px;
+    left: 128px;
+    top: 1701px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.sectionThree-content-right>h1 {
+    position: absolute;
+    height: 44px;
+    left: 631px;
+    top: 1625px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+    color: #000000;
+}
+
+.sectionThree-content-right>p {
+    position: absolute;
+    height: 376px;
+    left: 631px;
+    top: 1701px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
+
 footer {
-    margin-top: 322px;
+    margin-top: 150px;
     height: 240px;
     right: 0px;
     bottom: 0px;

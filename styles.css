@@ -101,13 +101,21 @@ header#main-header div.side>button {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-right: -100px;
 }
 
 header#main-header div.side>button:hover {
     cursor: pointer;
     background: #FF6B7D;
     box-shadow: 0px 4px 10px rgba(255, 107, 125, 0.7);
+}
+
+.about-link {
+    text-decoration: none;
+    color: black;
+}
+
+.about-link:hover {
+    font-weight: bold;
 }
 
 .shapeOne {
@@ -195,9 +203,21 @@ header#main-header div.side>button:hover {
     color: white;
 }
 
-.sectionTwo>img {
-    width: 1400px;
+.sectionTwo .sectionTwo-container>img {
+    width: 100%;
     height: 1000px;
+}
+
+.sectionTwo-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.sectionTwo-container .statistic-graph {
+    position: absolute;
+    top: 119px;
+    right: 16px;
 }
 
 .sectionTwo-phraseOne {
@@ -264,10 +284,7 @@ header#main-header div.side>button:hover {
     margin: 0 50px 0 50px;
 }
 
-.statistic-graph>img {
-    position: absolute;
-    margin: -863px 0 0 -143px;
-}
+.statistic-graph>img {}
 
 .statistics-data {
     position: absolute;
@@ -407,6 +424,7 @@ header#main-header div.side>button:hover {
 
 .sectionFour-content-left, .sectionFour-content-right {
     z-index: 1000;
+    margin-right: -231px;
 }
 
 .sectionFour-content-left>h1 {
@@ -580,7 +598,7 @@ header#main-header div.side>button:hover {
 }
 
 .sectionSeven {
-    margin-top: 150px;
+    margin-top: 340px;
 }
 
 .sectionSeven>h1 {
