@@ -5,11 +5,16 @@
     <meta charset='utf-8'>
     <title>GETMORE</title>
 
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.default.min.css">
+
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="responsivity.css">
 
+
+
 </head>
-<script type="text/javascript" src="_javascript/functions.js"></script>
 
 <body>
     <div class="shapeOne">
@@ -182,6 +187,7 @@
     <div class="sectionFive">
         <h1>conte com nossos parceiros em </br>
             sua plataforma personalizada_</h1>
+
         <div class="sectionFive-partners">
             <div class="box"><img src="images/cinemark.png" alt=""></div>
             <div class="box"><img src="images/uber.png" alt=""></div>
@@ -224,30 +230,19 @@
 
     <div class="sectionSeven">
         <h1>ouça o que dizem nossos clientes_</h1>
-        <div class="sectionSeven-testimonials">
-            <div>
+        <div id="testimonials-cards-container" class="owl-carousel owl-theme">
+            <div class="testimonials-cards">
                 <img src="images/foto.png" alt="">
-                <p>“Meu time está mais feliz e produtivo </br>
-                    com o novo portal de recompensas </br>
-                    oferecido em parceria com a getmore. O </br>
-                    investimento valeu cada centavo.”</p>
-                <h4>Pâmela, CEO da Bacaninha Tech</h4>
+                <h1>teste 1</h1>
             </div>
-            <div>
+            <div class="testimonials-cards">
                 <img src="images/foto.png" alt="">
-                <p>“Meu time está mais feliz e produtivo </br>
-                    com o novo portal de recompensas </br>
-                    oferecido em parceria com a getmore. O </br>
-                    investimento valeu cada centavo.”</p>
-                <h4>Pâmela, CEO da Bacaninha Tech</h4>
+                <h1>teste 2</h1>
+
             </div>
-            <div>
+            <div class="testimonials-cards">
                 <img src="images/foto.png" alt="">
-                <p>“Meu time está mais feliz e produtivo </br>
-                    com o novo portal de recompensas </br>
-                    oferecido em parceria com a getmore. O </br>
-                    investimento valeu cada centavo.”</p>
-                <h4>Pâmela, CEO da Bacaninha Tech</h4>
+                <h1>teste 3</h1>
             </div>
         </div>
     </div>
@@ -301,5 +296,10 @@
 
 <!-- jQuery -->
 <script src="_javascript/jquery.js"></script>
+
+<!-- owl carousel JS -->
+<script src="_javascript/owl-carousel/owl.carousel.min.js"></script>
+
+<script type="text/javascript" src="_javascript/functions.js"></script>
 
 </html>
