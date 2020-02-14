@@ -99,12 +99,57 @@
     .sectionSix {
         margin-top: -50px;
     }
+    .sectionEight {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 220px auto;
+    }
+    .sectionEight-content {
+        margin-top: 136px;
+    }
 }
 
 /* Smartphones (portrait) ----------- */
 
-@media only screen and (max-width: 320px) {
-    #main-header {
-        display: none
+@media (min-width: 320px) and (max-width: 1000px){
+    .sectionOne {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+        margin: 182px 0 357px 0;
+    }
+    .sectionOne-left {
+        margin-left: -153px;
+        position: static !important;
+    }
+    .sectionOne-left>h1 {
+        font-size: 58px;
+        line-height: 59px;
+    }
+    .sectionOne-left>p {
+        margin-top: 181px;
+        font-size: 38px;
+        line-height: 46px;
+    }
+    .sectionOne-left .contactButton button {
+        width: 514px;
+        height: 137px;
+        margin-top: 199px;
+        font-size: 36px;
+    }
+    .sectionOne-right {
+        margin: 60px;
+    }
+    .sectionOne-right>img {
+        width: 825px;
+    }
+    .sectionEight {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 220px auto;
+    }
+    .sectionEight-content {
+        margin-top: 136px;
     }
 }
