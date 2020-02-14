@@ -16,12 +16,12 @@ $(function () {
 		margin: 0,
 		responsive: {
 			0: {
-				items: 1
+				items: 2
 			},
-			600: {
-				items: 1
+			1024: {
+				items: 2
 			},
-			1000: {
+			1025: {
 				items: 3
 			}
 		}
