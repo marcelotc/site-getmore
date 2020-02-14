@@ -111,7 +111,7 @@
 
 /* Smartphones (portrait) ----------- */
 
-@media (min-width: 320px) and (max-width: 1000px){
+@media (min-width: 320px) and (max-width: 980px){
     .sectionOne {
         display: flex;
         flex-direction: column-reverse;
