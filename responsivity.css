@@ -111,13 +111,13 @@
 
 /* Smartphones (portrait) ----------- */
 
-@media (min-width: 320px) and (max-width: 980px){
+@media (min-width: 320px) and (max-width: 980px) {
     .sectionOne {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         justify-content: space-around;
-        margin: 182px 0 357px 0;
+        margin: 182px 0 133px 0;
     }
     .sectionOne-left {
         margin-left: -153px;
@@ -143,6 +143,104 @@
     }
     .sectionOne-right>img {
         width: 825px;
+    }
+    .sectionTwo-phraseOne {
+        font-size: 49px;
+        line-height: 73px;
+    }
+    .sectionTwo-phraseTwo {
+        font-size: 58px;
+        margin-top: 62px;
+    }
+    .sectionTwo-phraseThree {
+        font-weight: bold;
+        font-size: 37px;
+        line-height: 50px;
+        margin-top: 84px;
+    }
+    .sectionTwo-statistics>ul {
+        margin-top: 50px;
+        margin-top: 122px;
+    }
+    .sectionTwo-statistics>ul>li {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .sectionThree {
+        margin: 0;
+    }
+    .sectionThree>h1 {
+        margin: 65px 34px 106px 81px;
+        font-size: 63px;
+        line-height: 68px;
+    }
+    .sectionThree-container .circle.active {
+        font-size: 50px;
+        width: 104px;
+        height: 107px;
+    }
+    .sectionThree-container .circle {
+        font-size: 45px;
+        width: 78px;
+        height: 82px;
+    }
+    .sectionThreeOptions {
+        margin: 61px 0 0 -98px;
+    }
+    .sectionThreeOptionsImage {
+        margin: 0;
+    }
+    .sectionThreeOptionsImage>img {
+        width: 800px;
+    }
+    .sectionThreeOptions>h2.active {
+        font-size: 55px;
+    }
+    .sectionThreeOptions>h2 {
+        font-size: 43px;
+    }
+    .sectionFour {
+        height: 1580px;
+    }
+    .sectionFour-content {
+        flex-direction: column;
+    }
+    .sectionFour-content-right {
+        margin-top: 128px;
+    }
+    .sectionFour-container>h1 {
+        font-size: 60px;
+        line-height: 87px;
+    }
+    .sectionFour-content-left>h1, .sectionFour-content-right>h1 {
+        font-size: 66px;
+    }
+    .sectionFour-content-left>h3, .sectionFour-content-right>h3 {
+        font-size: 52px;
+        line-height: 60px;
+    }
+    .sectionFour-content-left>p, .sectionFour-content-right>p {
+        font-size: 38px;
+        line-height: 49px;
+        margin: 34px 0 22px 0;
+    }
+    .sectionFour-content-left>button, .sectionFour-content-right>button {
+        width: 544px;
+        height: 103px;
+        font-size: 30px;
+    }
+    .sectionFour-content-left>button>span, .sectionFour-content-right>button>span {
+        font-size: 38px;
+        font-weight: 20px;
+        margin-left: 10px;
+    }
+    .shapeFive{
+        display: none;
+    }
+    .statistics-data {
+        left: 57%;
+        font-size: 22px;
+        font-weight: bold;
     }
     .sectionEight {
         display: flex;
