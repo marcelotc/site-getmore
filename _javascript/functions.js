@@ -1,3 +1,17 @@
+/*====================================================
+                        MENU MOBILE
+====================================================*/
+function openNav() {
+	document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+	document.getElementById("myNav").style.height = "0%";
+}
+
+/*====================================================
+                        
+====================================================*/
 function mudaFoto(foto) {
 	document.getElementById("sectionThreeImage").src = foto;
 
@@ -15,7 +29,7 @@ $(function () {
 		loop: true,
 		autoplay: true,
 		autoplayTimeout: 3000,
-		autoplayHoverPause:true,
+		autoplayHoverPause: true,
 		margin: 0,
 		responsive: {
 			0: {
@@ -44,7 +58,7 @@ $(function () {
 		loop: true,
 		autoplay: true,
 		autoplayTimeout: 3000,
-		autoplayHoverPause:true,
+		autoplayHoverPause: true,
 		margin: 0,
 		responsive: {
 			0: {

@@ -6,16 +6,34 @@
     .sectionTwo {
         overflow: hidden;
     }
+    .break-1 {
+        display: none;
+    }
+    #mobile-header .content nav {
+        display: none;
+    }
+    #myNav {
+        display: none;
+    }
 }
 
 /* Medium Devices (Landscape Tablets & Medium Desktops) */
 
 @media (min-width: 768px) and (max-width: 1340px) {
-    .sectionOne-left {
-        margin-left: -134px;
+    #mobile-header .content nav {
+        display: none;
+    }
+    #myNav {
+        display: none;
+    }
+    .sectionOne {
+        margin-left: 27px;
+    }
+    .break-1 {
+        display: none;
     }
     .sectionOne-right {
-        margin-left: 576px;
+        margin-left: -104px;
     }
     .sectionOne-right>img {
         width: 442px;
@@ -112,11 +130,91 @@
 /* Smartphones (portrait) ----------- */
 
 @media (min-width: 320px) and (max-width: 980px) {
-    #main-header .about-link>img {
-        width: 211px;
+    #main-header .content nav, #main-header .content .side {
+        display: none;
     }
-    .about-link, .app-link {
-        font-size: 20px;
+    #mobile-header .content nav {
+        display: inline;
+    }
+    #mobile-header .content nav ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -60px;
+    }
+    #mobile-header .content nav img {
+        width: 100px;
+    }
+    #mobile-header .content nav span {
+        font-size: 66px;
+        cursor: pointer;
+        color: white;
+    }
+    #myNav {
+        display: inline;
+    }
+    .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(5px);
+        overflow-y: hidden;
+        transition: 0.5s;
+        z-index: 9999;
+    }
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .overlay a {
+        font-family: Inter;
+        padding: 8px;
+        text-decoration: none;
+        font-size: 70px;
+        color: #000;
+        display: block;
+        transition: 0.3s;
+        margin: 10px 0 170px 0;
+    }
+    .overlay button {
+        width: 276px;
+        height: 105px;
+        left: 0px;
+        top: 0px;
+        background: #FF6B7D;
+        box-shadow: 0px 4px 10px rgba(255, 107, 125, 0.4);
+        border-radius: 50px;
+        border: 0;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    .overlay button:hover {
+        cursor: pointer;
+        background: #FF6B7D;
+        box-shadow: 0px 4px 10px rgba(255, 107, 125, 0.7);
+    }
+    .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+    }
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 130px;
+        color: #000;
     }
     .sectionOne {
         display: flex;
@@ -126,17 +224,23 @@
         margin: 182px 0 133px 0;
     }
     .sectionOne-left {
-        margin-left: -153px;
-        position: static !important;
+        margin-left: -140px;
+        font-size: 59px;
     }
     .sectionOne-left>h1 {
-        font-size: 58px;
-        line-height: 59px;
+        font-size: 60px;
+        line-height: 69px;
+    }
+    .break-1 {
+        display: inline;
+    }
+    .break-2 {
+        display: inline;
     }
     .sectionOne-left>p {
-        margin-top: 181px;
-        font-size: 38px;
-        line-height: 46px;
+        margin: 50px 0 30px 0;
+        font-size: 41px;
+        line-height: 44px;
     }
     .sectionOne-left .contactButton button {
         width: 514px;

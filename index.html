@@ -23,7 +23,7 @@
         <div class="content">
             <nav>
                 <ul>
-                    <li><a href="#" class="about-link"><img src="images/getmore-logo-1.svg" alt="Getmore Logo"></a></li>
+                    <li><a href="#"><img src="images/getmore-logo-1.svg" alt="Getmore Logo"></a></li>
                     <li><a href="about.html" class="about-link">SOBRE NÓS</a></li>
                     <li><a href="#" class="app-link">APP COMB</a></li>
                 </ul>
@@ -36,18 +36,27 @@
 
     <header id="mobile-header">
         <div class="content">
-            <nav id="headerMobile" style="display: none">
-                <ul>
-                    <li><a href="#" class="about-link"><img src="images/getmore-logo-circulo 1.png"
-                                alt="Getmore Logo"></a></li>
+            <nav>
+                <ul class="header">
+                    <li><a href="#"><img src="images/getmore-logo-circulo 1.png" alt="Getmore Logo"></a></li>
+                    <li><span onclick="openNav()" style="color: white;">&#9776;</span></li>
                 </ul>
             </nav>
+        </div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="about.html">sobre nós</a>
+                <a href="#">app comb</a>
+                <a href="#"><button>contato</button></a>
+            </div>
         </div>
     </header>
 
     <div class="sectionOne">
         <div class="sectionOne-left">
-            <h1>fidelização e incentivos </br> pensandos para sua empresa_</h1>
+            <h1>fidelização e <span class="break-1"></br></span> incentivos pensados <span class="break-2"></br></span>
+                para sua empresa_</h1>
             <p>Te ajudamos a transformar seu relacionamento</br>
                 com clientes e colaboradores. Vamos conversar?</p>
 
@@ -301,7 +310,7 @@
                     01310-100</p>
             </div>
         </div>
-    </footer >
+    </footer>
 
 </body>
 
