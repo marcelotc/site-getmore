@@ -109,12 +109,12 @@ header#main-header div.side>button:hover {
     box-shadow: 0px 4px 10px rgba(255, 107, 125, 0.7);
 }
 
-.about-link {
+.about-link, .app-link {
     text-decoration: none;
     color: black;
 }
 
-.about-link:hover {
+.about-link:hover, .app-link:hover {
     font-weight: bold;
 }
 
