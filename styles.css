@@ -131,13 +131,10 @@ header#main-header div.side>button:hover {
     align-items: center;
     justify-content: space-around;
     margin-top: 128px;
+    margin-left: 130px;
 }
 
 .sectionOne-left>h1 {
-    width: 677px;
-    height: 89px;
-    left: 126px;
-    top: 319px;
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
@@ -158,17 +155,6 @@ header#main-header div.side>button:hover {
     line-height: 25px;
     margin-top: 18px;
     color: #222222;
-}
-
-.sectionOne-left {
-    margin: 0;
-    margin-left: -223px;
-    position: absolute;
-}
-
-.sectionOne-right {
-    margin: 0;
-    margin-left: 714px;
 }
 
 .sectionOne .contactButton>button {
@@ -194,6 +180,10 @@ header#main-header div.side>button:hover {
     cursor: pointer;
     background: #07D599;
     box-shadow: 0px 4px 10px rgba(0, 196, 138, 0.7);
+}
+
+.sectionOne-right {
+    margin-right: 35px;
 }
 
 .sectionTwo {
