@@ -10,7 +10,10 @@
 
 /* Smartphones (portrait and landscape) ----------- */
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 481px) {
+    #main-header {
+        display: none;
+    }
     #mobile-header {
         display: inline;
     }
@@ -83,15 +86,6 @@
         width: 67px;
         margin-right: 53px;
     }
-    footer {
-        height: 1500px;
-    }
-    .footer-content {
-        display: flex;
-        flex-direction: column;
-        display: table;
-        margin: 0 auto;
-    }
     .form-container input {
         border: none;
         border-bottom: 1px solid #828282;
@@ -120,6 +114,15 @@
         text-transform: uppercase;
         font-weight: bold;
         margin-left: 415px;
+    }
+    footer {
+        height: 1500px;
+    }
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        display: table;
+        margin: 0 auto;
     }
     .footer-content-left, .footer-content-right {
         font-size: 37px;
@@ -181,48 +184,212 @@
 
 /* iPads (portrait and landscape) ----------- */
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    /* STYLES GO HERE */
-}
-
-/* iPads (landscape) ----------- */
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    /* STYLES GO HERE */
-}
-
-/* iPads (portrait) ----------- */
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-    /* STYLES GO HERE */
-}
-
-/* Desktops and laptops ----------- */
-
-@media only screen and (min-width: 1224px) {
-    /* STYLES GO HERE */
-}
-
-/* Large screens ----------- */
-
-@media only screen and (min-width: 1824px) {
-    /* STYLES GO HERE */
-}
-
-/* iPhone 5 (portrait & landscape)----------- */
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-    /* STYLES GO HERE */
-}
-
-/* iPhone 5 (landscape)----------- */
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
-    /* STYLES GO HERE */
-}
-
-/* iPhone 5 (portrait)----------- */
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
-    /* STYLES GO HERE */
-}
+@media only screen and (min-device-width: 482px) and (max-device-width: 1024px) {
+    header#main-header {
+        margin: 15px 70px 0 70px;
+    }
+    header#main-header .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+    header#main-header nav ul {
+        display: flex;
+        list-style: none;
+    }
+    header#main-header nav ul li {
+        display: flex;
+        align-items: center;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 15px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #363636;
+        margin-right: 59px;
+    }
+    header#main-header nav ul li:first-child {
+        margin: 0;
+    }
+    header#main-header nav ul li img {
+        margin-right: 71px;
+    }
+    header#main-header div.side {
+        display: flex;
+    }
+    header#main-header div.side img {
+        height: 34px;
+        width: 34px;
+        border-radius: 50%;
+        margin: 0 15px;
+    }
+    header#main-header div.side>button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 131px;
+        height: 48px;
+        left: 0px;
+        top: 0px;
+        background: #FF6B7D;
+        box-shadow: 0px 4px 10px rgba(255, 107, 125, 0.4);
+        border-radius: 50px;
+        border: 0;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    header#main-header div.side>button:hover {
+        cursor: pointer;
+        background: #FF6B7D;
+        box-shadow: 0px 4px 10px rgba(255, 107, 125, 0.7);
+    }
+    .about-link, .app-link {
+        text-decoration: none;
+        color: black;
+    }
+    .about-link:hover, .app-link:hover {
+        font-weight: bold;
+    }
+    .sectionOne {
+        margin: 60px 0 0 70px;
+    }
+    .sectionOne>h1 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        color: #000000;
+    }
+    .sectionOne>p {
+        font-size: 25px;
+        margin-top: 15px;
+    }
+    .sectionForm {
+        display: table;
+        margin: 0 auto;
+        background: url("images/Vector 12.png") no-repeat center center;
+        background-size: 99% 78%;
+        padding: 161px 50px 200px 98px;
+    }
+    .sectionForm form {
+        width: 810px;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+        border-radius: 40px;
+        background: #fff;
+    }
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 93px 55px 63px 55px;
+    }
+    .form-container input {
+        border: none;
+        border-bottom: 1px solid #828282;
+        padding: 7px 0;
+        margin-bottom: 46px;
+        color: #4F4F4F;
+        font-size: 35px;
+    }
+    .form-container textarea {
+        border: 0;
+        border-bottom: 1px solid;
+        margin: 150px 0 50px 0;
+    }
+    .form-container button {
+        width: 200px;
+        height: 87px;
+        background: #07D599;
+        box-shadow: 0px 4px 10px rgba(7, 213, 153, 0.25);
+        border-radius: 50px;
+        font-size: 35px;
+        letter-spacing: 3px;
+        border: 0;
+        color: white;
+        font-family: Inter;
+        text-transform: uppercase;
+        font-weight: bold;
+        float: right;
+        margin-left: 520px;
+    }
+    .sectionTwo {
+        display: table;
+        margin: 0 50px;
+        font-size: 33px;
+    }
+    .sectionTwo h4 {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 33px;
+        margin-bottom: 80px;
+    }
+    .sectionTwo img {
+        float: left;
+        width: 44px;
+        margin-right: 53px;
+    }
+    footer {
+        height: 310px;
+    }
+    .footer-content {
+        margin-left: 55px;
+    }
+    .footer-content-left {
+        font-size: 18px;
+    }
+    .footer-social-medias>a>img {
+        margin: 27px 5px 40px 5px;
+        width: 40px;
+    }
+    .footer-email>img {
+        margin-top: 18px;
+        width: 40px;
+    }
+    .footer-content-right>h4 {
+        font-size: 18px;
+    }
+    .footer-content-right>h5 {
+        font-size: 13px;
+        margin-top: 25px;
+    }
+    .footer-content-right>p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    /* iPads (landscape) ----------- */
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+        /* STYLES GO HERE */
+    }
+    /* iPads (portrait) ----------- */
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+        /* STYLES GO HERE */
+    }
+    /* Desktops and laptops ----------- */
+    @media only screen and (min-width: 1224px) {
+        /* STYLES GO HERE */
+    }
+    /* Large screens ----------- */
+    @media only screen and (min-width: 1824px) {
+        /* STYLES GO HERE */
+    }
+    /* iPhone 5 (portrait & landscape)----------- */
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+        /* STYLES GO HERE */
+    }
+    /* iPhone 5 (landscape)----------- */
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+        /* STYLES GO HERE */
+    }
+    /* iPhone 5 (portrait)----------- */
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+        /* STYLES GO HERE */
+    }
