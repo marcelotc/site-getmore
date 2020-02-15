@@ -72,6 +72,7 @@
     .sectionTwo {
         display: table;
         margin: 0 50px;
+        margin: 0px 0 115px 52px;
         font-size: 33px;
     }
     .sectionTwo h4 {
@@ -168,18 +169,6 @@
     #mobile-header {
         display: none;
     }
-}
-
-/* Smartphones (landscape) ----------- */
-
-@media only screen and (min-width: 321px) {
-    /* STYLES GO HERE */
-}
-
-/* Smartphones (portrait) ----------- */
-
-@media only screen and (max-width: 320px) {
-    /* STYLES GO HERE */
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -323,6 +312,7 @@
     .sectionTwo {
         display: table;
         margin: 0 50px;
+        margin: 0px 0 115px 52px;
         font-size: 33px;
     }
     .sectionTwo h4 {
@@ -336,6 +326,9 @@
         float: left;
         width: 44px;
         margin-right: 53px;
+    }
+    .sectionTwo .social-medias {
+        
     }
     footer {
         height: 310px;
@@ -365,31 +358,152 @@
         font-size: 14px;
         line-height: 20px;
     }
-    /* iPads (landscape) ----------- */
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-        /* STYLES GO HERE */
+}
+
+/* Desktops and laptops ----------- */
+
+@media only screen and (min-device-width: 1025px) and (max-device-width: 2560px) {
+    header#main-header {
+        margin: 40px 105px 0 142px;
     }
-    /* iPads (portrait) ----------- */
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-        /* STYLES GO HERE */
+    header#main-header .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
     }
-    /* Desktops and laptops ----------- */
-    @media only screen and (min-width: 1224px) {
-        /* STYLES GO HERE */
+    header#main-header nav ul {
+        display: flex;
+        list-style: none;
     }
-    /* Large screens ----------- */
-    @media only screen and (min-width: 1824px) {
-        /* STYLES GO HERE */
+    header#main-header nav ul li {
+        display: flex;
+        align-items: center;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #363636;
+        margin-right: 59px;
     }
-    /* iPhone 5 (portrait & landscape)----------- */
-    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-        /* STYLES GO HERE */
+    header#main-header nav ul li:first-child {
+        margin: 0;
     }
-    /* iPhone 5 (landscape)----------- */
-    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
-        /* STYLES GO HERE */
+    header#main-header nav ul li img {
+        margin-right: 71px;
     }
-    /* iPhone 5 (portrait)----------- */
-    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
-        /* STYLES GO HERE */
+    header#main-header div.side {
+        display: flex;
     }
+    header#main-header div.side img {
+        height: 34px;
+        width: 34px;
+        border-radius: 50%;
+        margin: 0 15px;
+    }
+    header#main-header div.side>button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 131px;
+        height: 48px;
+        left: 0px;
+        top: 0px;
+        background: #FF6B7D;
+        box-shadow: 0px 4px 10px rgba(255, 107, 125, 0.4);
+        border-radius: 50px;
+        border: 0;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    header#main-header div.side>button:hover {
+        cursor: pointer;
+        background: #FF6B7D;
+        box-shadow: 0px 4px 10px rgba(255, 107, 125, 0.7);
+    }
+    .about-link, .app-link {
+        text-decoration: none;
+        color: black;
+    }
+    .about-link:hover, .app-link:hover {
+        font-weight: bold;
+    }
+    .sectionOne {
+        position: absolute;
+        margin: 166px 15px 0px 136px;
+    }
+    .sectionOne h1 {
+        margin-bottom: 10px;
+        font-size: 42px;
+    }
+    .sectionTwo {
+        margin: 373px 15px 0px 136px;
+    }
+    .sectionTwo h4 {
+        margin-bottom: 30px;
+    }
+    .sectionTwo img {
+        float: left;
+        margin-right: 15px;
+    }
+    .sectionForm {
+        display: table;
+        margin: 0 auto;
+        background: url("images/Vector 12.png") no-repeat center center;
+        background-size: 94% 68%;
+        padding: 161px 50px 200px 98px;
+        float: right;
+    }
+    .sectionForm form {
+        width: 689px;
+        height: 495px;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+        border-radius: 40px;
+        background: #fff;
+    }
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 38px 55px 63px 55px;
+    }
+    .form-container input {
+        border: none;
+        border-bottom: 1px solid #828282;
+        padding: 7px 0;
+        margin-bottom: 46px;
+        color: #4F4F4F;
+        font-size: 20px;
+    }
+    .form-container textarea {
+        border: 0;
+        border-bottom: 1px solid;
+        margin: 60px 0 50px 0;
+    }
+    .form-container button {
+        width: 97px;
+        height: 40px;
+        background: #07D599;
+        box-shadow: 0px 4px 10px rgba(7, 213, 153, 0.25);
+        border-radius: 50px;
+        font-size: 13px;
+        border: 0;
+        color: white;
+        font-family: Inter;
+        text-transform: uppercase;
+        font-weight: bold;
+        float: right;
+        margin-left: 491px;
+    }
+    .footer-content {
+        margin-left: 121px;
+    }
+}
