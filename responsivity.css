@@ -242,7 +242,7 @@
         font-size: 41px;
         line-height: 44px;
     }
-    .sectionOne-left .contactButton button {
+    .sectionOne-left .contactButton a button {
         width: 514px;
         height: 137px;
         margin-top: 199px;
@@ -380,12 +380,12 @@
         font-size: 41px;
         line-height: 44px;
     }
-    .sectionEight-content>button {
+    .sectionEight-content>a button {
         width: 546px;
         height: 141px;
         font-size: 37px;
     }
-    .sectionEight-content>button>span {
+    .sectionEight-content>a button>span {
         font-size: 37px;
     }
     .testimonials-cards {
