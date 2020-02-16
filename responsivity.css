@@ -334,12 +334,12 @@
         line-height: 49px;
         margin: 34px 0 22px 0;
     }
-    .sectionFour-content-left>button, .sectionFour-content-right>button {
+    .sectionFour-content-left>button, .sectionFour-content-right>a button {
         width: 544px;
         height: 103px;
         font-size: 30px;
     }
-    .sectionFour-content-left>button>span, .sectionFour-content-right>button>span {
+    .sectionFour-content-left>button>span, .sectionFour-content-right>a button>span {
         font-size: 38px;
         font-weight: 20px;
         margin-left: 10px;
