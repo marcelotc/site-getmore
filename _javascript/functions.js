@@ -47,7 +47,14 @@ $(function () {
 			}
 		}
 	})
+
+	if(window.innerWidth > 1023){
+		$('#partners-carousel').removeClass('owl-carousel');
+		$('#partners-carousel').removeClass('owl-theme');
+		$('div#partners-carousel').removeAttr('id');
+	}
 });
+
 
 /*====================================================
                         PARTNERS

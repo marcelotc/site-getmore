@@ -111,6 +111,9 @@
     .sectionSeven {
         margin-top: 1247px;
     }
+    .shapeFive, .shapeSix{
+        display: none;
+    }
     .shapeSix {
         margin-top: -503px;
     }
@@ -357,7 +360,8 @@
         font-size: 53px;
     }
     .sectionSix-partners {
-        margin: 0px 35px 0 43px;
+        margin: 110px 35px 0 43px;
+        padding: 0;
     }
     .sectionSix-partners .box {
         width: 435px;
