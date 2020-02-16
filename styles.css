@@ -82,7 +82,7 @@ header#main-header div.side img {
     margin: 0 15px;
 }
 
-header#main-header div.side>button {
+header#main-header div.side>a button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,7 +103,7 @@ header#main-header div.side>button {
     color: #FFFFFF;
 }
 
-header#main-header div.side>button:hover {
+header#main-header div.side>a button:hover {
     cursor: pointer;
     background: #FF6B7D;
     box-shadow: 0px 4px 10px rgba(255, 107, 125, 0.7);
