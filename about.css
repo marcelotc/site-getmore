@@ -105,12 +105,21 @@ header#main-header div.side>a button:hover {
     font-weight: bold;
 }
 
-.about-link:hover {
+.about-link, .app-link {
+    text-decoration: none;
+    color: black;
+}
+
+.about-link:hover, .app-link:hover {
     font-weight: bold;
 }
 
 .sectionOne {
-    margin: 170px 0 0 0;
+    margin: 170px 24px 0 81px;
+}
+
+#break-4, #break-5 {
+    display: none;
 }
 
 .sectionOne-container {
@@ -119,13 +128,7 @@ header#main-header div.side>a button:hover {
     justify-content: space-around;
 }
 
-.sectioOne-content {
-    margin-left: 80px;
-}
-
 .sectioOne-content>h1 {
-    position: absolute;
-    height: 137px;
     left: 128px;
     top: 257px;
     font-family: Poppins;
@@ -137,8 +140,6 @@ header#main-header div.side>a button:hover {
 }
 
 .sectioOne-content>p {
-    position: absolute;
-    height: 104px;
     left: 128px;
     top: 454px;
     font-family: Inter;
@@ -147,11 +148,28 @@ header#main-header div.side>a button:hover {
     font-size: 18px;
     line-height: 25px;
     color: #000000;
+    margin-top: 50px;
 }
 
-.sectioOne-content-video {
-    background: url("images/Vector 18.png") no-repeat;
-    margin-left: 400px;
+.sectionTwo {
+    display: table;
+    margin: 0 34px 0 115px;
+}
+
+.sectionTwo>h1 {
+    left: 128px;
+    top: 257px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+    color: #000000;
+}
+
+.sectionTwo-container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 div#video-image {
@@ -169,39 +187,10 @@ video#videoGet {
     width: 440px;
 }
 
-.sectionTwo>h1 {
-    position: absolute;
-    height: 45px;
-    left: 128px;
-    top: 818px;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 40px;
-    color: #000000;
-}
-
-.sectionTwo-container {
-    position: absolute;
-    width: 175px;
-    height: 175px;
-    left: 181px;
-    top: 793px;
-    display: flex;
-    flex-direction: row;
-    margin: 181px 0 0 -52px;
-}
-
-.sectionTwo-content div {
-    display: flex;
-    flex-direction: row;
-}
-
 .image-container {
     position: relative;
     display: table;
-    margin: 0 37px;
+    margin: 85px -30px 0 95px;
 }
 
 .image-container>h3 {
@@ -238,16 +227,21 @@ video#videoGet {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin-top: 439px;
+    margin-top: -25px;
 }
 
 .sectionThree {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin: -400px 406px 0px 136px;
+}
+
+.sectionThree-content-left p, .sectionThree-content-right p {
+    margin-top: 41px;
 }
 
 .sectionThree-content-left>h1 {
-    position: absolute;
     height: 44px;
     left: 128px;
     top: 1625px;
@@ -260,7 +254,6 @@ video#videoGet {
 }
 
 .sectionThree-content-left>p {
-    position: absolute;
     height: 376px;
     left: 128px;
     top: 1701px;
@@ -273,7 +266,6 @@ video#videoGet {
 }
 
 .sectionThree-content-right>h1 {
-    position: absolute;
     height: 44px;
     left: 631px;
     top: 1625px;
@@ -286,7 +278,6 @@ video#videoGet {
 }
 
 .sectionThree-content-right>p {
-    position: absolute;
     height: 376px;
     left: 631px;
     top: 1701px;
@@ -299,7 +290,6 @@ video#videoGet {
 }
 
 footer {
-    margin-top: 150px;
     height: 240px;
     right: 0px;
     bottom: 0px;

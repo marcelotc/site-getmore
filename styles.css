@@ -143,6 +143,10 @@ header#main-header div.side>a button:hover {
     color: #222222;
 }
 
+.break-2 {
+    display: none;
+}
+
 .sectionOne-left>p {
     width: 570px;
     height: 51px;

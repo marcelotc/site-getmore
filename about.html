@@ -7,13 +7,11 @@
     <link rel="icon" href="images/favicon.ico" sizes="16x16">
 
     <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="responsivity.css">
-    <link rel="stylesheet" href="themes/blue/pace-theme-minimal.css">
+    <link rel="stylesheet" href="about-responsivity.css">
 
     <link rel="stylesheet" href="paceJS/minimal.css">
     <script src="paceJS/pace.js"></script>
 </head>
-<script type="text/javascript" src="_javascript/functions.js"></script>
 
 <body>
 
@@ -23,7 +21,7 @@
                 <ul>
                     <li><a href="index.html" class="about-link"><img src="images/getmore-logo-1.svg" alt="Getmore Logo"></a></li>
                     <li><a href="#" class="about-link">SOBRE NÓS</a></li>
-                    <li>APP COMB</li>
+                    <li><a href="https://comb.com.br/" class="app-link" target="_blank">app comb</a></li>
                 </ul>
             </nav>
             <div class="side">
@@ -32,16 +30,35 @@
         </div>
     </header>
 
+    <header id="mobile-header">
+        <div class="content">
+            <nav>
+                <ul class="header">
+                    <li><a href="index.html"><img src="images/getmore-logo-circulo 1.png" alt="Getmore Logo"></a></li>
+                    <li><span onclick="openNav()" style="color: black;">&#9776;</span></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="about.html">sobre nós</a>
+                <a href="#">app comb</a>
+                <a href="contact.html"><button>contato</button></a>
+            </div>
+        </div>
+    </header>
+
     <div class="sectionOne">
         <div class="sectionOne-container">
             <div class="sectioOne-content">
-                <h1>somos um time movido </br>
-                    a desafios que acredita </br>
-                    que o futuro da </br>
-                    fidelização é ????_</h1>
-                <p>Acreditamos que o grande diferencial das empresas </br>
-                    inteligentes é a fidelização. Nossa missão é transformar </br>
-                    seu relacionamento com clientes e colaboradores </br>
+                <h1>somos um time movido <span id="break-1"></br></span>
+                    a <span id="break-4"></br></span> desafios que acredita  <span id="break-2"></br></span>
+                    que o <span id="break-5"></br></span> futuro da  <span id="break-3"></br></span>
+                    fidelização é agora_</h1>
+                <p>Acreditamos que o grande diferencial das empresas <span id="break-6"></br></span>
+                    inteligentes é a fidelização. Nossa missão é transformar <span id="break-7"></br></span>
+                    seu relacionamento com clientes e colaboradores <span id="break-8"></br></span>
                     através de soluções de fidelização e
                     incentivos. </p>
             </div>
@@ -151,5 +168,10 @@
     </footer>
 
 </body>
+
+<!-- jQuery -->
+<script src="_javascript/jquery.js"></script>
+
+<script type="text/javascript" src="_javascript/functions.js"></script>
 
 </html>
