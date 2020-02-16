@@ -473,7 +473,7 @@ header#main-header div.side>a button:hover {
     color: #FFFFFF;
 }
 
-.sectionFour-content-left>button, .sectionFour-content-right>a button {
+.sectionFour-content-left>button {
     width: 228px;
     height: 49px;
     left: 0px;
@@ -489,6 +489,25 @@ header#main-header div.side>a button:hover {
     text-transform: uppercase;
     color: #FFFFFF;
     margin-top: 60px;
+    color: #FF6B7D;
+}
+
+.sectionFour-content-right>a button{
+    width: 228px;
+    height: 49px;
+    left: 0px;
+    top: 1px;
+    background: transparent;
+    border: 1px solid #FF6B7D;
+    border-radius: 100px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 49px;
     color: #FF6B7D;
 }
 
