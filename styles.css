@@ -558,15 +558,17 @@ header#main-header div.side>a button:hover {
     margin-bottom: 65px;
 }
 
-.sectionFive-partners div {
+.sectionFive-partners {
     display: flex;
     flex-wrap: wrap;
-    padding: 30px 19px 0px 61px;
+    align-items: center;
+    align-content: center;
+    margin: 0px 23px 0 45px;
 }
 
 .sectionFive-partners .box {
-    width: 193px;
-    height: 175px;
+    width: 200px;
+    height: 190px;
 }
 
 .sectionFive-partners .box>img {

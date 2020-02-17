@@ -47,12 +47,6 @@ $(function () {
 			}
 		}
 	})
-
-	if(window.innerWidth > 1023){
-		$('#partners-carousel').removeClass('owl-carousel');
-		$('#partners-carousel').removeClass('owl-theme');
-		$('div#partners-carousel').removeAttr('id');
-	}
 });
 
 
@@ -61,21 +55,47 @@ $(function () {
 ====================================================*/
 $(function () {
 
-	$('#partners-carousel').owlCarousel({
+	$('#partners-carousel-mobile-1').owlCarousel({
 		loop: true,
 		autoplay: true,
 		autoplayTimeout: 3000,
 		autoplayHoverPause: true,
-		margin: 0,
+		margin: 20,
+		stagePadding: 100,
+		dots: false,
 		responsive: {
 			0: {
-				items: 3
-			},
-			1024: {
-				items: 5
-			},
-			1025: {
-				items: 5
+				items: 2
+			}
+		}
+	})
+
+	$('#partners-carousel-mobile-2').owlCarousel({
+		loop: true,
+		autoplay: true,
+		autoplayTimeout: 3000,
+		autoplayHoverPause: true,
+		margin: 20,
+		stagePadding: 100,
+		dots: false,
+		responsive: {
+			0: {
+				items: 2
+			}
+		}
+	})
+
+	$('#partners-carousel-mobile-3').owlCarousel({
+		loop: true,
+		autoplay: true,
+		autoplayTimeout: 3000,
+		autoplayHoverPause: true,
+		margin: 20,
+		stagePadding: 100,
+		dots: true,
+		responsive: {
+			0: {
+				items: 2
 			}
 		}
 	})
@@ -85,9 +105,9 @@ $(function () {
                         STATS
 ====================================================*/
 $(function () {
-    $('.counter').counterUp({
-        delay: 10,
-        time: 2000
-    });
+	$('.counter').counterUp({
+		delay: 10,
+		time: 2000
+	});
 
 });

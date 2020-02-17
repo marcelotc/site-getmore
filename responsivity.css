@@ -15,6 +15,14 @@
     #myNav {
         display: none;
     }
+    .sectionFive-partners div {
+        display: flexn;
+        flex-wrap: wrap;
+        padding: 30px 19px 0px 61px;
+    }
+    #sectionFive-partners-mobile {
+        display: none;
+    }
 }
 
 /* Medium Devices (Landscape Tablets & Medium Desktops) */
@@ -47,6 +55,9 @@
     .sectionThree-container {
         display: flex;
         flex-direction: column-reverse;
+    }
+    #sectionFive-partners-mobile {
+        display: none;
     }
 }
 
@@ -97,10 +108,19 @@
     .shapeFive {
         margin-top: -80px;
     }
+    .sectionFive-partners {
+        margin: -6px 23px 85px 45px;
+    }
+    #sectionFive-partners-mobile {
+        display: none;
+    }
     .sectionFive-partners .box {
-        width: 250px;
+        width: 295px;
         height: 190px;
-        margin: -15px;
+        margin-top: 75px;
+    }
+    .sectionFive-partners .box>img {
+        width: 264px;
     }
     .sectionSix-partners {
         padding: 100px;
@@ -111,7 +131,7 @@
     .sectionSeven {
         margin-top: 1247px;
     }
-    .shapeFive, .shapeSix{
+    .shapeFive, .shapeSix {
         display: none;
     }
     .shapeSix {
@@ -347,8 +367,17 @@
         font-weight: 20px;
         margin-left: 10px;
     }
+    .sectionFive-partners {
+        display: none;
+    }
+    #sectionFive-partners-mobile {
+        display: inline;
+    }
     .shapeFive {
-        margin-top: 1174px;
+        display: none;
+    }
+    .break-3{
+        display: none;
     }
     .shapeSix {
         display: none;
@@ -360,6 +389,7 @@
         font-size: 53px;
     }
     .sectionSix-partners {
+        margin: 0px 35px 0 43px;
         margin: 110px 35px 0 43px;
         padding: 0;
     }
