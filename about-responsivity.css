@@ -116,6 +116,8 @@
         left: 42px;
         top: -64px;
         width: 708px;
+        border-radius: 30px;
+        outline: none;
     }
     .sectioOne-content>h1 {
         font-size: 68px;
@@ -268,6 +270,8 @@
         left: 42px;
         top: -64px;
         width: 708px;
+        border-radius: 30px;
+        outline: none;
     }
     .sectionTwo {
         margin: 135px 34px 0 65px;

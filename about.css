@@ -190,6 +190,8 @@ video#videoGet {
     left: 43px;
     top: 46px;
     width: 536px;
+    border-radius: 30px;
+    outline: none;
 }
 
 .image-container {
