@@ -1,5 +1,52 @@
 <!DOCTYPE html>
 <html>
+<script type="text/javascript">
+    function sendData(formEl) {
+        const inputs = Array.from(formEl.getElementsByTagName('input'))
+        const textarea = Array.from(formEl.getElementsByTagName('textarea'))
+
+        const [nome, telefone, email, assunto] = inputs.map(_ => _.value)
+        const mensagem = textarea[0].value
+
+        return fetch('https://gateway.getmore.com.br/api/contact', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                nome,
+                telefone,
+                email,
+                assunto,
+                mensagem
+            })
+        }).then(_ => _.json())
+    }
+    window.addEventListener('load', () => {
+
+        const formEl = document.getElementById('formulario-contato')
+        const respEl = document.getElementById('resposta-formulario')
+        formEl.addEventListener('submit', ev => {
+            ev.preventDefault()
+            sendData(formEl)
+                .then(data => {
+                    if (data == "OK") {
+                        respEl.innerHTML = '<div class="alerta sucesso">Mensagem enviada com sucesso!</div>'
+                    } else {
+                        if (data.errorType == 'InvalidInput') {
+                            respEl.innerHTML = '<div class="alerta erro">Todos os campos são obrigatórios.</div>'
+                        } else { // code == EmailError
+                            respEl.innerHTML = '<div class="alerta erro">Houve um erro ao enviar.<br/>Tente novamente em alguns minutos.</div>'
+                        }
+                    }
+                })
+                .catch(err => {
+                    respEl.innerHTML = '<div class="alerta erro">Houve um erro ao enviar.$<br/>Tente novamente em alguns minutos.</div>'
+                })
+        })
+    })
+</script>
 
 <head>
     <meta charset='utf-8'>
@@ -19,7 +66,8 @@
         <div class="content">
             <nav>
                 <ul>
-                    <li><a href="index.html" class="about-link"><img src="images/getmore-logo-1.svg" alt="Getmore Logo"></a></li>
+                    <li><a href="index.html" class="about-link"><img src="images/getmore-logo-1.png"
+                                alt="Getmore Logo"></a></li>
                     <li><a href="about.html" class="about-link">SOBRE NÓS</a></li>
                     <li><a href="https://comb.com.br/" class="app-link" target="_blank">app comb</a></li>
                 </ul>
@@ -48,13 +96,34 @@
     <div style="clear:both;"></div>
 
     <div class="sectionForm">
-        <form>
+        <form id="formulario-contato" method="POST" action="/api/contato" class="formulario">
             <div class="form-container">
-                <input type="text" id="fname" name="fname" value="Nome">
-                <input type="text" id="lname" name="lname" value="E-mail">
-                <input type="text" id="lname" name="lname" value="Assunto">
-                <textarea></textarea>
+                <div class="input-group">
+                    <input type="text" name="nome" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Nome</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="email" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>E-mail</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" name="assunto" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Assunto</label>
+                </div>
+                <textarea name="mensagem" type="text" placeholder="Mensagem" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Mensagem'"></textarea>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+
                 <button>enviar</button>
+                <div id="resposta-formulario">
+                </div>
             </div>
         </form>
     </div>
@@ -69,7 +138,6 @@
         <div class="social-medias">
             <div><img src="images/LinkedIN.png" alt=""></div>
             <div><img src="images/Group.png" alt=""></div>
-            <div><img src="images/Instagram.png" alt=""></div>
         </div>
     </div>
 
@@ -84,7 +152,6 @@
                             alt=""></a>
                     <a href="https://www.facebook.com/getmore.br/" target="_blank"><img src="images/Facebook_white.png"
                             alt=""></a>
-                    <a href=""><img src="images/Instagram_white.png" alt=""></a>
                 </div>
 
                 <div class="footer-email">

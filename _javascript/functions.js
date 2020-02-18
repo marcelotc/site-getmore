@@ -10,7 +10,7 @@ function closeNav() {
 }
 
 /*====================================================
-                        
+              			 ACORDEON         
 ====================================================*/
 function mudaFoto(foto) {
 	document.getElementById("sectionThreeImage").src = foto;
@@ -18,6 +18,14 @@ function mudaFoto(foto) {
 	//$('.active').removeClass('active');
 	$(this).addClass('active');
 }
+
+$('.menu').on('click', function() {
+	$(".active").removeClass("active")
+	$('.menu-content').hide();
+	$(this).find('.menu-content').show();
+	$(this).addClass('active').find('.circle').addClass('active');
+  });
+
 
 
 /*====================================================

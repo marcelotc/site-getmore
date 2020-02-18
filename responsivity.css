@@ -376,7 +376,7 @@
     .shapeFive {
         display: none;
     }
-    .break-3{
+    .break-3 {
         display: none;
     }
     .shapeSix {
@@ -438,6 +438,9 @@
     .testimonials-cards>h4 {
         font-size: 33px;
         margin-top: 74px;
+        position: absolute;
+        bottom: 73px;
+        right: 144px;
     }
     .statistics-data {
         left: 57%;

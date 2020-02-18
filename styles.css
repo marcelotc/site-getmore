@@ -69,6 +69,7 @@ header#main-header nav ul li:first-child {
 
 header#main-header nav ul li img {
     margin-right: 71px;
+    width: 192px;
 }
 
 header#main-header div.side {
@@ -317,6 +318,10 @@ header#main-header div.side>a button:hover {
     list-style: none;
 }
 
+.sectionThree-container>ul p {
+    display: none;
+}
+
 .sectionThreeOptions>h2 {
     font-family: Poppins;
     font-style: normal;
@@ -496,7 +501,7 @@ header#main-header div.side>a button:hover {
     color: #FF6B7D;
 }
 
-.sectionFour-content-right>a button{
+.sectionFour-content-right>a button {
     width: 228px;
     height: 49px;
     left: 0px;
@@ -663,6 +668,9 @@ header#main-header div.side>a button:hover {
     text-transform: uppercase;
     color: #5437A3;
     margin-top: 20px;
+    position: absolute;
+    bottom: 45px;
+    right: 79px;
 }
 
 .sectionEight {

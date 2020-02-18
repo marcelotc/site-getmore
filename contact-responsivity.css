@@ -53,8 +53,8 @@
         display: table;
         margin: 0 auto;
         background: url("images/Vector 13.png") no-repeat center center;
-        background-size: 84% auto;
-        padding: 112px 112px 112px 55px;
+        background-size: 99% 89%;
+        padding: 162px 79px 210px 55px;
     }
     .sectionForm form {
         width: 810px;
@@ -99,7 +99,10 @@
         width: 80%;
         border: 0;
         border-bottom: 1px solid;
-        margin: 300px 0 105px 0;
+        margin: 86px 0 105px 0;
+        font-family: Inter;
+        font-size: 18px;
+        color: #4F4F4F;
     }
     .form-container button {
         width: 225px;
@@ -115,6 +118,38 @@
         text-transform: uppercase;
         font-weight: bold;
         margin-left: 415px;
+    }
+    .input-group {
+        position: relative;
+    }
+    input {
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 300px;
+        border: none;
+        border-bottom: 1px solid #757575;
+        width: 100%;
+    }
+    input:focus {
+        outline: none;
+    }
+    label {
+        color: #999;
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 5px;
+        top: 10px;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+    input:focus~label, input:valid~label {
+        top: -20px;
+        font-size: 14px;
+        color: #4285f4;
     }
     footer {
         height: 1500px;
@@ -309,6 +344,63 @@
         float: right;
         margin-left: 520px;
     }
+    .input-group {
+        position: relative;
+    }
+    input {
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 300px;
+        border: none;
+        border-bottom: 1px solid #757575;
+        width: 100%;
+    }
+    input:focus {
+        outline: none;
+    }
+    label {
+        color: #999;
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 5px;
+        top: 10px;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+    label.message {
+        color: #999;
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 191px;
+        top: 1080px;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+    input:focus~label, input:valid~label {
+        top: -20px;
+        font-size: 14px;
+        color: #4285f4;
+    }
+    textarea:focus~label {
+        top: 930px;
+        font-size: 14px;
+        color: #4285f4;
+    }
+    .form-container textarea {
+        color: #999;
+        border: 0;
+        border-bottom: 1px solid;
+        width: 100%;
+        font-family: Inter;
+        font-size: 18px;
+    }
     .sectionTwo {
         display: table;
         margin: 0 50px;
@@ -327,7 +419,6 @@
         width: 44px;
         margin-right: 53px;
     }
-    .sectionTwo .social-medias {}
     footer {
         height: 310px;
     }
@@ -414,11 +505,63 @@
         margin-bottom: 46px;
         color: #4F4F4F;
         font-size: 20px;
+        width: 100%;
+    }
+    .input-group {
+        position: relative;
+    }
+    input {
+        font-size: 18px;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 300px;
+        border: none;
+        border-bottom: 1px solid #757575;
+    }
+    input:focus, textarea:focus {
+        outline: none;
+    }
+    label {
+        color: #999;
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 5px;
+        top: 10px;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+    label.message {
+        color: #999;
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        pointer-events: none;
+        left: 761px;
+        top: 661px;
+        transition: 0.2s ease all;
+        -moz-transition: 0.2s ease all;
+        -webkit-transition: 0.2s ease all;
+    }
+    input:focus~label, input:valid~label {
+        top: -20px;
+        font-size: 14px;
+        color: #4285f4;
+    }
+    textarea:focus~label {
+        top: 500px;
+        font-size: 14px;
+        color: #4285f4;
     }
     .form-container textarea {
+        color: #999;
         border: 0;
         border-bottom: 1px solid;
-        margin: 60px 0 50px 0;
+        width: 100%;
+        font-family: Inter;
+        font-size: 18px;
     }
     .form-container button {
         width: 97px;
@@ -434,6 +577,7 @@
         font-weight: bold;
         float: right;
         margin-left: 491px;
+        margin-top: 26px;
     }
     .footer-content {
         margin-left: 121px;

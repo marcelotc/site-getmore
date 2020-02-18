@@ -63,6 +63,7 @@ header#main-header nav ul li:first-child {
 
 header#main-header nav ul li img {
     margin-right: 71px;
+    width: 192px;
 }
 
 header#main-header div.side {
@@ -186,9 +187,9 @@ div#video-image {
 video#videoGet {
     display: block;
     position: relative;
-    left: 90px;
-    top: 90px;
-    width: 440px;
+    left: 43px;
+    top: 46px;
+    width: 536px;
 }
 
 .image-container {

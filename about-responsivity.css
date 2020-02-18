@@ -144,8 +144,9 @@
         width: 578px;
     }
     .image-container .centered img {
-        width: 191px;
-        height: 216px;
+        width: 255px;
+        height: 253px;
+        margin-top: 47px;
     }
     .image-container>h3 {
         font-size: 72px;
@@ -172,7 +173,6 @@
         font-size: 41px;
         line-height: 48px;
     }
-    
     footer {
         height: 1500px;
     }
