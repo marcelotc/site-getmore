@@ -305,7 +305,7 @@
     .sectionThree {
         margin: 0;
     }
-    .break-5, .break-8, .break-10, .break-19, .break-20, .break-24, .break-25 {
+    .break-5, .break-8, .break-10, .break-19, .break-20, .break-24, .break-25, .break-26 {
         display: none;
     }
     .sectionThree-container>ul>li> p {
@@ -440,18 +440,22 @@
         width: 386px;
         top: -133px;
     }
-    .testimonials-cards>p {
+    .testimonials-cards>.container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .testimonials-cards> .container p {
         font-size: 45px;
         line-height: 53px;
         font-size: 41px;
-        line-height: 44px;
+        line-height: 52px;
     }
-    .testimonials-cards>h4 {
+    .testimonials-cards> .container h4 {
         font-size: 33px;
         margin-top: 74px;
-        position: absolute;
         bottom: 73px;
-        right: 144px;
+        text-align: center;
     }
     .statistics-data {
         left: 57%;

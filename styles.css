@@ -254,7 +254,7 @@ header#main-header div.side>a button:hover {
 .sectionTwo-phraseThree {
     position: absolute;
     left: 6%;
-    top: 37%;
+    top: 39%;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -405,7 +405,6 @@ header#main-header div.side>a button:hover {
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-
 }
 
 @keyframes floating {
@@ -510,7 +509,7 @@ header#main-header div.side>a button:hover {
     color: #FFFFFF;
 }
 
-.sectionFour-content-left> a button {
+.sectionFour-content-left>a button {
     width: 245px;
     height: 49px;
     left: 0px;
@@ -676,7 +675,13 @@ header#main-header div.side>a button:hover {
     top: -79px;
 }
 
-.testimonials-cards>p {
+.testimonials-cards>.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials-cards>.container p {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -685,9 +690,10 @@ header#main-header div.side>a button:hover {
     text-align: center;
     color: #363636;
     margin-top: -72px;
+    margin-bottom: 38px;
 }
 
-.testimonials-cards>h4 {
+.testimonials-cards>.container h4 {
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
@@ -696,10 +702,10 @@ header#main-header div.side>a button:hover {
     text-align: center;
     text-transform: uppercase;
     color: #5437A3;
-    margin-top: 20px;
-    position: absolute;
     bottom: 45px;
     right: 79px;
+    margin-top: auto;
+
 }
 
 .sectionEight {
