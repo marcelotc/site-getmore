@@ -308,7 +308,7 @@
     .break-5, .break-8, .break-10, .break-19, .break-20, .break-24, .break-25 {
         display: none;
     }
-    .sectionThree-container>ul>li>p {
+    .sectionThree-container>ul>li> p {
         font-size: 49px;
         line-height: 71px;
         margin-left: 0;
@@ -329,7 +329,7 @@
         height: 82px;
     }
     .sectionThreeOptions {
-        margin: 61px 0 0 -98px;
+        margin: 61px 0 0 0;
     }
     .sectionThreeOptionsImage {
         margin: 0;

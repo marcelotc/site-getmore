@@ -146,13 +146,13 @@ header#main-header div.side>a button:hover {
 
 .blink_me {
     animation: blinker 1.5s linear infinite;
-  }
-  
-  @keyframes blinker {
+}
+
+@keyframes blinker {
     50% {
-      opacity: 0.1;
+        opacity: 0.1;
     }
-  }
+}
 
 .break-2 {
     display: none;
@@ -400,6 +400,26 @@ header#main-header div.side>a button:hover {
     margin-left: 100px;
 }
 
+.floating {
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes floating {
+    from {
+        transform: translate(0, 0px);
+    }
+    65% {
+        transform: translate(0, 15px);
+    }
+    to {
+        transform: translate(0, -0px);
+    }
+}
+
 .sectionFour {
     background: #2A0C7E;
     height: 800px;
@@ -587,6 +607,7 @@ header#main-header div.side>a button:hover {
 .sectionFive-partners .box>img {
     border-radius: 8%;
 }
+
 .shapeSix {
     margin-top: -215px;
 }
