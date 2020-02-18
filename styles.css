@@ -510,8 +510,8 @@ header#main-header div.side>a button:hover {
     color: #FFFFFF;
 }
 
-.sectionFour-content-left>button {
-    width: 228px;
+.sectionFour-content-left> a button {
+    width: 245px;
     height: 49px;
     left: 0px;
     top: 1px;
@@ -548,7 +548,7 @@ header#main-header div.side>a button:hover {
     color: #FF6B7D;
 }
 
-.sectionFour-content-left>button:hover, .sectionFour-content-right>a button:hover {
+.sectionFour-content-left>a button:hover, .sectionFour-content-right>a button:hover {
     background: #FF6B7D;
     box-shadow: 0px 4px 10px rgba(255, 107, 125, 0.4);
     color: #fff;
