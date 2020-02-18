@@ -9,6 +9,9 @@
     .break-1 {
         display: none;
     }
+    .break-4, .break-6, .break-7, .break-9, .break-11, .break-13, .break-14, .break-15, .break-16, .break-18, .break-20, .break-21, .break-22, .break-23 {
+        display: none;
+    }
     #mobile-header .content nav {
         display: none;
     }
@@ -301,6 +304,14 @@
     }
     .sectionThree {
         margin: 0;
+    }
+    .break-5, .break-8, .break-10, .break-19, .break-20, .break-24, .break-25 {
+        display: none;
+    }
+    .sectionThree-container>ul>li>p {
+        font-size: 49px;
+        line-height: 71px;
+        margin-left: 0;
     }
     .sectionThree>h1 {
         margin: 65px 34px 106px 81px;

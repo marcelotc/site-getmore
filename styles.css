@@ -144,6 +144,16 @@ header#main-header div.side>a button:hover {
     color: #222222;
 }
 
+.blink_me {
+    animation: blinker 1.5s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0.1;
+    }
+  }
+
 .break-2 {
     display: none;
 }

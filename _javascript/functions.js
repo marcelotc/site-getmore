@@ -35,7 +35,7 @@ $(function () {
 
 	$('#testimonials-cards-container').owlCarousel({
 		loop: true,
-		autoplay: true,
+		autoplay: false,
 		autoplayTimeout: 3000,
 		autoplayHoverPause: true,
 		margin: 0,
